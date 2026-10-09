@@ -59,7 +59,7 @@ not go on the page. Ask instead of guessing.
   same database without breaking each other.
 - Live on the App Store and Google Play since July 2026.
 
-### Live events, on site
+### Live events
 - A body-tracking growth wall for Nestle's Ascenda launch at the Ritz-Carlton,
   Jeddah, used by more than 150 guests in one evening.
 - An event app for L'Oreal used at more than 5 live events.
@@ -87,3 +87,4 @@ not go on the page. Ask instead of guessing.
 - GitHub: https://github.com/ajeermahmood
 - LinkedIn: https://linkedin.com/in/ajeermahmood
 - Website: https://ajeer.website
+- Resume: resume.pdf, a file in site/ next to the page (link it relatively)
