@@ -1,0 +1,12 @@
+{
+  "name": "about-me",
+  "private": true,
+  "description": "Ajeer Mohammed's About Me page, built with Fredrin.",
+  "type": "module",
+  "engines": { "node": ">=23.6" },
+  "scripts": {
+    "check": "node scripts/check.ts",
+    "check:links": "node scripts/check.ts --network",
+    "serve": "npx --yes serve site"
+  }
+}
