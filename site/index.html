@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ajeer Mohammed, senior full-stack engineer</title>
+  <meta name="description" content="Ajeer Mohammed ships production software with AI coding agents, and builds the checks that keep their mistakes out of production.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <h1>Ajeer Mohammed</h1>
+    <p class="role">Senior full-stack engineer. India, working remotely (IST, UTC+5:30).</p>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shipped">Shipped</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>I ship production software with AI coding agents, and build the checks that keep their mistakes out of production. Since July 2026, about nine in ten of my commits are written with a coding agent, mostly Claude Code. Before that, I spent nearly two and a half years with teams in Dubai, building apps and live-event installations for brands like Nestle, L'Oreal and Abbott.</p>
+    </section>
+
+    <section id="shipped" aria-labelledby="shipped-heading">
+      <h2 id="shipped-heading">Shipped</h2>
+
+      <article>
+        <h3>Enrixa Store, a multi-tenant e-commerce platform</h3>
+        <p>Built mostly with Claude Code: 1,276 of my 1,357 commits were written with the agent. Every merchant runs an isolated store on its own subdomain, on one shared database, behind 60 data models and 287 REST endpoints in NestJS, Prisma and PostgreSQL, with two Next.js apps. Every push runs a tenant-isolation check and a migration check, so a query that could show one merchant's data to another fails the build.</p>
+      </article>
+
+      <article>
+        <h3>An agent that works production support tickets</h3>
+        <p>In its first six weeks, one in three of its fixes came back reopened, almost all reasoned from code and never observed in a browser, so observed evidence is now a condition of closing. On a schedule, the agent reads new and reopened storefront tickets from merchants, reproduces each one at the merchant's screen size, fixes it, and passes the test gate and a code review. It then deploys, checks the live site, and closes the ticket with a plain-language note.</p>
+      </article>
+
+      <article>
+        <h3>Making repositories safe for coding agents</h3>
+        <p>I cut an agent's permission list from 662 rules to 62, with explicit deny rules, wrote agent instructions in 8 production repositories, and added a hook that blocks the agent from reading secret files. One incident: a hook used a repo-relative path, so a subagent running from a subdirectory could not find it, and because a failing pre-tool hook blocks every tool call instead of failing open, the session stalled. I recovered with throwaway git worktrees and fixed it by resolving every hook from the project root.</p>
+      </article>
+
+      <article>
+        <h3>Enrixa AI, a shopping assistant for Shopify</h3>
+        <p>132 behaviour tests run the real assistant against a demo store, including the refusals a pharmacy must make. Enrixa AI is live for a real online pharmacy. It looks up products, variants and stock while it answers, and falls back across Claude and Gemini when a provider is busy.</p>
+      </article>
+
+      <article>
+        <h3>W.I.N.S, for the Alabama Department of Public Health</h3>
+        <p>A Next.js admin on Supabase and a Flutter app for parents, sharing one Postgres database of 15 tables. I wrote the schema contract and table ownership rules that let two teams change the same database without breaking each other. W.I.N.S has been live on the App Store and Google Play since July 2026.</p>
+      </article>
+
+      <article>
+        <h3>Live events</h3>
+        <p>A body-tracking growth wall for Nestle's Ascenda launch at the Ritz-Carlton, Jeddah, used by more than 150 guests in one evening. An event app for L'Oreal, used at more than 5 live events.</p>
+      </article>
+
+      <h3>Open source</h3>
+      <ul class="links">
+        <li><a href="https://github.com/ajeermahmood/bouncer-gates">bouncer-gates</a>: checks that stop expensive mistakes before they merge, as a CLI, a GitHub Action, an MCP server and an editor hook. Listed in the official MCP Registry. 159 tests.</li>
+        <li><a href="https://github.com/ajeermahmood/agent-ready-repo">agent-ready-repo</a>: a template for a repository coding agents can work in safely.</li>
+        <li><a href="https://github.com/ajeermahmood/estate">estate</a>: one Go binary that checks a whole folder of repositories and fails CI.</li>
+      </ul>
+
+      <h3>Writing</h3>
+      <ul class="links">
+        <li><a href="https://ajeer.website/how-i-work">How I build software with AI agents</a></li>
+        <li><a href="https://ajeer.website/blog/what-my-coding-agents-got-wrong">What my coding agents got wrong, and what caught it</a></li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <ul class="contact">
+        <li>Email: <a href="mailto:ajeermahmood@outlook.com">ajeermahmood@outlook.com</a></li>
+        <li>GitHub: <a href="https://github.com/ajeermahmood">github.com/ajeermahmood</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/ajeermahmood">linkedin.com/in/ajeermahmood</a></li>
+        <li>Website: <a href="https://ajeer.website">ajeer.website</a></li>
+        <li>Resume: <a href="resume.pdf">resume.pdf</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
